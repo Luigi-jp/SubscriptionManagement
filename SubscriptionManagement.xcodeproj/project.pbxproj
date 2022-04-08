@@ -14,6 +14,10 @@
 		2A67DA2627FDE07000A2D9B5 /* SubscriptionListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A67DA2427FDE07000A2D9B5 /* SubscriptionListCell.xib */; };
 		2A67DA2827FDE09200A2D9B5 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA2727FDE09200A2D9B5 /* UITableViewCell+.swift */; };
 		2A67DA2B27FDF49300A2D9B5 /* SubscriptionServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA2A27FDF49300A2D9B5 /* SubscriptionServiceModel.swift */; };
+		2A67DA2F27FF277E00A2D9B5 /* AddSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA2E27FF277E00A2D9B5 /* AddSubscriptionViewController.swift */; };
+		2A67DA3127FF278A00A2D9B5 /* AddSubscription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A67DA3027FF278A00A2D9B5 /* AddSubscription.storyboard */; };
+		2A67DA3327FFE19E00A2D9B5 /* PickerKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA3227FFE19E00A2D9B5 /* PickerKeyboard.swift */; };
+		2A67DA3528004D6200A2D9B5 /* DatePickerKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA3428004D6200A2D9B5 /* DatePickerKeyboard.swift */; };
 		2AD3FEFC27FDBEAC008EE6BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3FEFB27FDBEAC008EE6BA /* AppDelegate.swift */; };
 		2AD3FEFE27FDBEAC008EE6BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3FEFD27FDBEAC008EE6BA /* SceneDelegate.swift */; };
 		2AD3FF0027FDBEAC008EE6BA /* SubscriptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3FEFF27FDBEAC008EE6BA /* SubscriptionListViewController.swift */; };
@@ -49,6 +53,10 @@
 		2A67DA2427FDE07000A2D9B5 /* SubscriptionListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscriptionListCell.xib; sourceTree = "<group>"; };
 		2A67DA2727FDE09200A2D9B5 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 		2A67DA2A27FDF49300A2D9B5 /* SubscriptionServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionServiceModel.swift; sourceTree = "<group>"; };
+		2A67DA2E27FF277E00A2D9B5 /* AddSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionViewController.swift; sourceTree = "<group>"; };
+		2A67DA3027FF278A00A2D9B5 /* AddSubscription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSubscription.storyboard; sourceTree = "<group>"; };
+		2A67DA3227FFE19E00A2D9B5 /* PickerKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerKeyboard.swift; sourceTree = "<group>"; };
+		2A67DA3428004D6200A2D9B5 /* DatePickerKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerKeyboard.swift; sourceTree = "<group>"; };
 		2AD3FEF827FDBEAC008EE6BA /* SubscriptionManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubscriptionManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD3FEFB27FDBEAC008EE6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AD3FEFD27FDBEAC008EE6BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +139,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2A67DA2C27FF272300A2D9B5 /* AddSubscription */ = {
+			isa = PBXGroup;
+			children = (
+				2A67DA2D27FF273500A2D9B5 /* ViewController */,
+			);
+			path = AddSubscription;
+			sourceTree = "<group>";
+		};
+		2A67DA2D27FF273500A2D9B5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A67DA2E27FF277E00A2D9B5 /* AddSubscriptionViewController.swift */,
+				2A67DA3027FF278A00A2D9B5 /* AddSubscription.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		2AD3FEEF27FDBEAC008EE6BA = {
 			isa = PBXGroup;
 			children = (
@@ -157,8 +182,11 @@
 				2AD3FEFB27FDBEAC008EE6BA /* AppDelegate.swift */,
 				2AD3FEFD27FDBEAC008EE6BA /* SceneDelegate.swift */,
 				2AD3FF2B27FDD512008EE6BA /* SubscriptionList */,
+				2A67DA2C27FF272300A2D9B5 /* AddSubscription */,
 				2A67DA1C27FDD6E100A2D9B5 /* Utility */,
 				2A67DA1D27FDD6F000A2D9B5 /* Extensions */,
+				2A67DA3227FFE19E00A2D9B5 /* PickerKeyboard.swift */,
+				2A67DA3428004D6200A2D9B5 /* DatePickerKeyboard.swift */,
 				2AD3FF0427FDBEAE008EE6BA /* Assets.xcassets */,
 				2AD3FF0627FDBEAE008EE6BA /* LaunchScreen.storyboard */,
 				2AD3FF0927FDBEAE008EE6BA /* Info.plist */,
@@ -297,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A67DA3127FF278A00A2D9B5 /* AddSubscription.storyboard in Resources */,
 				2AD3FF0827FDBEAE008EE6BA /* LaunchScreen.storyboard in Resources */,
 				2AD3FF0527FDBEAE008EE6BA /* Assets.xcassets in Resources */,
 				2A67DA2627FDE07000A2D9B5 /* SubscriptionListCell.xib in Resources */,
@@ -325,12 +354,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A67DA2F27FF277E00A2D9B5 /* AddSubscriptionViewController.swift in Sources */,
 				2A67DA2B27FDF49300A2D9B5 /* SubscriptionServiceModel.swift in Sources */,
 				2A67DA1F27FDD71F00A2D9B5 /* UIStoryboard+.swift in Sources */,
 				2AD3FF0027FDBEAC008EE6BA /* SubscriptionListViewController.swift in Sources */,
 				2A67DA2527FDE07000A2D9B5 /* SubscriptionListCell.swift in Sources */,
 				2A67DA2127FDD7A700A2D9B5 /* Router.swift in Sources */,
+				2A67DA3327FFE19E00A2D9B5 /* PickerKeyboard.swift in Sources */,
 				2AD3FEFC27FDBEAC008EE6BA /* AppDelegate.swift in Sources */,
+				2A67DA3528004D6200A2D9B5 /* DatePickerKeyboard.swift in Sources */,
 				2A67DA2827FDE09200A2D9B5 /* UITableViewCell+.swift in Sources */,
 				2AD3FEFE27FDBEAC008EE6BA /* SceneDelegate.swift in Sources */,
 			);

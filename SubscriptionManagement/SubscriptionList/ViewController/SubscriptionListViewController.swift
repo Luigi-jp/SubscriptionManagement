@@ -20,12 +20,17 @@ final class SubscriptionListViewController: UIViewController {
     ]
 
     @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet private weak var addButton: UIButton!
+    @IBOutlet private weak var addButton: UIButton! {
+        didSet {
+            addButton.addTarget(self, action: #selector(tapAddButton(_:)), for: .touchUpInside)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "サブスク一覧"
         tableView.register(SubscriptionListCell.nib, forCellReuseIdentifier: SubscriptionListCell.identifier)
+        addButton.layer.cornerRadius = addButton.bounds.width / 2
     }
 }
 
@@ -41,5 +46,11 @@ extension SubscriptionListViewController: UITableViewDataSource {
         let item = subscriptions[indexPath.row]
         cell.configure(item: item)
         return cell
+    }
+}
+
+@objc private extension SubscriptionListViewController {
+    func tapAddButton(_ sender: UIButton) {
+        Router.shaerd.showAddSubscription(from: self)
     }
 }

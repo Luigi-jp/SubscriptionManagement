@@ -20,13 +20,23 @@ enum Cycle: Int {
     case sixMonth
     case oneYear
 
-    var description: String {
+    var unit: String {
         switch self {
         case .oneMonth: return "月"
         case .twoMonth: return "2ヶ月"
         case .threeMonth: return "3ヶ月"
         case .sixMonth: return "6ヶ月"
         case .oneYear: return "年"
+        }
+    }
+
+    var title: String {
+        switch self {
+        case .oneMonth: return "1ヶ月に1回"
+        case .twoMonth: return "2ヶ月に1回"
+        case .threeMonth: return "3ヶ月に1回"
+        case .sixMonth: return "半年に1回"
+        case .oneYear: return "年に1回"
         }
     }
 }

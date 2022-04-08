@@ -25,6 +25,11 @@ final class Router {
         let nextVc = SubscriptionListViewController.makeFromStoryboard()
         show(from: from, to: nextVc)
     }
+
+    func showAddSubscription(from: UIViewController) {
+        let nextVc = AddSubscriptionViewController.makeFromStoryboard()
+        showModal(from: from, to: nextVc)
+    }
 }
 
 private extension Router {
@@ -34,5 +39,10 @@ private extension Router {
         } else {
             from.present(to, animated: animated)
         }
+    }
+
+    func showModal(from: UIViewController, to: UIViewController, animated: Bool = true) {
+        let nav = UINavigationController(rootViewController: to)
+        from.present(nav, animated: animated)
     }
 }

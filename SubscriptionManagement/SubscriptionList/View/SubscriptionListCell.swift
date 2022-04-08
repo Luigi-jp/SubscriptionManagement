@@ -22,7 +22,7 @@ final class SubscriptionListCell: UITableViewCell {
 
     func configure(item: SubscriptionServiceModel) {
         nameLabel.text = item.name
-        priceLabel.text = "¥\(item.price)/\(item.cycle.description)"
+        priceLabel.text = "¥\(item.price)/\(item.cycle.unit)"
         billingDateLabel.text = "更新日：2022/4/10"
     }
 }
