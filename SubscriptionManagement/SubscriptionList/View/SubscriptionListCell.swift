@@ -12,7 +12,7 @@ final class SubscriptionListCell: UITableViewCell {
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var billingDateLabel: UILabel!
     @IBOutlet private weak var priceLabel: UILabel!
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
         nameLabel.text = nil

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DatePickerKeyboard: UITextField {
+final class DatePickerKeyboard: UITextField {
     private let datePickerView = UIDatePicker()
 
     required init?(coder: NSCoder) {
@@ -32,7 +32,7 @@ private extension DatePickerKeyboard {
         if #available(iOS 14.0, *) {
             datePickerView.preferredDatePickerStyle = .wheels
         }
-        addTarget(self, action: #selector(tapPickerKeyboard(_:)), for: .touchDown)
+        setText()
         inputView = datePickerView
         inputAccessoryView = createInputAccessoryView()
     }
@@ -73,10 +73,6 @@ private extension DatePickerKeyboard {
 }
 
 @objc private extension DatePickerKeyboard {
-    func tapPickerKeyboard(_ sender: PickerKeyboard) {
-        self.becomeFirstResponder()
-    }
-
     func tapCloseButton(_ sender: UIButton) {
         setText()
         self.resignFirstResponder()

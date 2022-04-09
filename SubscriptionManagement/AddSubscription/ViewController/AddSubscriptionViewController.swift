@@ -14,11 +14,15 @@ final class AddSubscriptionViewController: UIViewController {
     }
 
     private let cycles: [Cycle] = [.oneMonth, .twoMonth, .threeMonth, .sixMonth, .oneYear]
-    
 
-    @IBOutlet private weak var pickerKeyboard: PickerKeyboard!
-    @IBOutlet private weak var cycleLable: UILabel!
+    @IBOutlet private weak var nameTextField: UITextField!
+    @IBOutlet private weak var priceTextField: UITextField!
+    @IBOutlet private weak var paymentCycleTextField: PickerKeyboard!
+    @IBOutlet private weak var paymentDateTextField: DatePickerKeyboard!
+    @IBOutlet private weak var tagTextField: UITextField!
+    @IBOutlet private weak var memoTextField: UITextField!
     @IBOutlet private weak var registrationButton: UIButton!
+    @IBOutlet private var textFields: [UITextField]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,22 +30,15 @@ final class AddSubscriptionViewController: UIViewController {
         let dismissBarButton = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(tapDismissBarButton(_:)))
         navigationItem.leftBarButtonItem = dismissBarButton
         registrationButton.layer.cornerRadius = 30
-        pickerKeyboard.delegate = self
+        textFields.forEach { textField in
+            textField.setUnderLine()
+        }
+        paymentCycleTextField.setData(data: cycles.map { $0.title })
     }
 }
 
 @objc private extension AddSubscriptionViewController {
     func tapDismissBarButton(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true)
-    }
-}
-
-extension AddSubscriptionViewController: PickerKeyboardDelegate {
-    func titlesOfPickerKeyboard(sender: PickerKeyboard) -> [String] {
-        return cycles.map { $0.title }
-    }
-    
-    func didDone(sender: PickerKeyboard, SelectedRow: Int) {
-        cycleLable.text = cycles[SelectedRow].title
     }
 }

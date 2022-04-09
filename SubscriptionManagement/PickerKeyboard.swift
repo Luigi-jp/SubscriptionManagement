@@ -7,37 +7,39 @@
 
 import UIKit
 
-protocol PickerKeyboardDelegate {
-    func titlesOfPickerKeyboard(sender: PickerKeyboard) -> [String]
-    func didDone(sender: PickerKeyboard, SelectedRow: Int)
-}
-
-class PickerKeyboard: UIControl {
+final class PickerKeyboard: UITextField {
     
-    var delegate: PickerKeyboardDelegate!
     private let pickerView = UIPickerView()
-    private var data: [String] {
-        delegate.titlesOfPickerKeyboard(sender: self)
-    }
+    private var data: [String] = []
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        addTarget(self, action: #selector(tapPickerKeyboard(_:)), for: .touchDown)
+        setup()
     }
     
-    override var canBecomeFirstResponder: Bool {
-        return true
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+        return false
     }
-    
-    override var inputView: UIView? {
-        
+
+    override func caretRect(for position: UITextPosition) -> CGRect {
+        return CGRect(x: 0, y: 0, width: 0, height: 0)
+    }
+
+    func setData(data: [String]) {
+        self.data = data
+    }
+}
+
+private extension PickerKeyboard {
+    func setup() {
         pickerView.delegate = self
         pickerView.dataSource = self
         pickerView.selectRow(0, inComponent: 0, animated: false)
-        return pickerView
+        inputView = pickerView
+        inputAccessoryView = createAccessoryView()
     }
-    
-    override var inputAccessoryView: UIView? {
+
+    func createAccessoryView() -> UIView {
         let closeButton = UIButton(type: .system)
         closeButton.setTitle("完了", for: .normal)
         closeButton.sizeToFit()
@@ -66,12 +68,8 @@ class PickerKeyboard: UIControl {
 }
 
 @objc private extension PickerKeyboard {
-    func tapPickerKeyboard(_ sender: PickerKeyboard) {
-        self.becomeFirstResponder()
-    }
-    
     func tapCloseButton(_ sender: UIButton) {
-        delegate.didDone(sender: self, SelectedRow: pickerView.selectedRow(inComponent: 0))
+        text = data[pickerView.selectedRow(inComponent: 0)]
         self.resignFirstResponder()
     }
 
