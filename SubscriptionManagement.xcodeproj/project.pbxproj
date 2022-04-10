@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A67DA1A27FDD69300A2D9B5 /* SubscriptionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A67DA1927FDD69300A2D9B5 /* SubscriptionList.storyboard */; };
+		2A67DA1F27FDD71F00A2D9B5 /* UIStoryboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA1E27FDD71F00A2D9B5 /* UIStoryboard+.swift */; };
+		2A67DA2127FDD7A700A2D9B5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA2027FDD7A700A2D9B5 /* Router.swift */; };
+		2A67DA2527FDE07000A2D9B5 /* SubscriptionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA2327FDE07000A2D9B5 /* SubscriptionListCell.swift */; };
+		2A67DA2627FDE07000A2D9B5 /* SubscriptionListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A67DA2427FDE07000A2D9B5 /* SubscriptionListCell.xib */; };
+		2A67DA2827FDE09200A2D9B5 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA2727FDE09200A2D9B5 /* UITableViewCell+.swift */; };
+		2A67DA2B27FDF49300A2D9B5 /* SubscriptionServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA2A27FDF49300A2D9B5 /* SubscriptionServiceModel.swift */; };
+		2A67DA2F27FF277E00A2D9B5 /* AddSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA2E27FF277E00A2D9B5 /* AddSubscriptionViewController.swift */; };
+		2A67DA3127FF278A00A2D9B5 /* AddSubscription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A67DA3027FF278A00A2D9B5 /* AddSubscription.storyboard */; };
+		2A67DA3327FFE19E00A2D9B5 /* PickerKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA3227FFE19E00A2D9B5 /* PickerKeyboard.swift */; };
+		2A67DA3528004D6200A2D9B5 /* DatePickerKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA3428004D6200A2D9B5 /* DatePickerKeyboard.swift */; };
+		2A67DA392800868800A2D9B5 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA382800868800A2D9B5 /* UITextField+.swift */; };
 		2AD3FEFC27FDBEAC008EE6BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3FEFB27FDBEAC008EE6BA /* AppDelegate.swift */; };
 		2AD3FEFE27FDBEAC008EE6BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3FEFD27FDBEAC008EE6BA /* SceneDelegate.swift */; };
-		2AD3FF0027FDBEAC008EE6BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3FEFF27FDBEAC008EE6BA /* ViewController.swift */; };
-		2AD3FF0327FDBEAC008EE6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD3FF0127FDBEAC008EE6BA /* Main.storyboard */; };
+		2AD3FF0027FDBEAC008EE6BA /* SubscriptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3FEFF27FDBEAC008EE6BA /* SubscriptionListViewController.swift */; };
 		2AD3FF0527FDBEAE008EE6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD3FF0427FDBEAE008EE6BA /* Assets.xcassets */; };
 		2AD3FF0827FDBEAE008EE6BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD3FF0627FDBEAE008EE6BA /* LaunchScreen.storyboard */; };
 		2AD3FF1327FDBEAE008EE6BA /* SubscriptionManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3FF1227FDBEAE008EE6BA /* SubscriptionManagementTests.swift */; };
 		2AD3FF1D27FDBEAE008EE6BA /* SubscriptionManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3FF1C27FDBEAE008EE6BA /* SubscriptionManagementUITests.swift */; };
 		2AD3FF1F27FDBEAE008EE6BA /* SubscriptionManagementUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3FF1E27FDBEAE008EE6BA /* SubscriptionManagementUITestsLaunchTests.swift */; };
+		BCB046BBB0038E885670F58E /* Pods_SubscriptionManagement_SubscriptionManagementUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE4F54F38388E8370B61E2C /* Pods_SubscriptionManagement_SubscriptionManagementUITests.framework */; };
+		CD4B438074109196B53D185C /* Pods_SubscriptionManagementTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6B8D2E4C84E36B6BA48FAA /* Pods_SubscriptionManagementTests.framework */; };
+		E756B990BE252EA06C36C5BD /* Pods_SubscriptionManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8B99FAA98471195C34DE70 /* Pods_SubscriptionManagement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +50,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0945E5001B8DD951765562AA /* Pods-SubscriptionManagement-SubscriptionManagementUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionManagement-SubscriptionManagementUITests.release.xcconfig"; path = "Target Support Files/Pods-SubscriptionManagement-SubscriptionManagementUITests/Pods-SubscriptionManagement-SubscriptionManagementUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A67DA1927FDD69300A2D9B5 /* SubscriptionList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubscriptionList.storyboard; sourceTree = "<group>"; };
+		2A67DA1E27FDD71F00A2D9B5 /* UIStoryboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+.swift"; sourceTree = "<group>"; };
+		2A67DA2027FDD7A700A2D9B5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2A67DA2327FDE07000A2D9B5 /* SubscriptionListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionListCell.swift; sourceTree = "<group>"; };
+		2A67DA2427FDE07000A2D9B5 /* SubscriptionListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscriptionListCell.xib; sourceTree = "<group>"; };
+		2A67DA2727FDE09200A2D9B5 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
+		2A67DA2A27FDF49300A2D9B5 /* SubscriptionServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionServiceModel.swift; sourceTree = "<group>"; };
+		2A67DA2E27FF277E00A2D9B5 /* AddSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionViewController.swift; sourceTree = "<group>"; };
+		2A67DA3027FF278A00A2D9B5 /* AddSubscription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSubscription.storyboard; sourceTree = "<group>"; };
+		2A67DA3227FFE19E00A2D9B5 /* PickerKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerKeyboard.swift; sourceTree = "<group>"; };
+		2A67DA3428004D6200A2D9B5 /* DatePickerKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerKeyboard.swift; sourceTree = "<group>"; };
+		2A67DA382800868800A2D9B5 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		2AAE8AD02252135EC6BE79EB /* Pods-SubscriptionManagementTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionManagementTests.debug.xcconfig"; path = "Target Support Files/Pods-SubscriptionManagementTests/Pods-SubscriptionManagementTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2AD3FEF827FDBEAC008EE6BA /* SubscriptionManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubscriptionManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD3FEFB27FDBEAC008EE6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AD3FEFD27FDBEAC008EE6BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2AD3FEFF27FDBEAC008EE6BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2AD3FF0227FDBEAC008EE6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AD3FEFF27FDBEAC008EE6BA /* SubscriptionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionListViewController.swift; sourceTree = "<group>"; };
 		2AD3FF0427FDBEAE008EE6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AD3FF0727FDBEAE008EE6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AD3FF0927FDBEAE008EE6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +76,13 @@
 		2AD3FF1827FDBEAE008EE6BA /* SubscriptionManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubscriptionManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD3FF1C27FDBEAE008EE6BA /* SubscriptionManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManagementUITests.swift; sourceTree = "<group>"; };
 		2AD3FF1E27FDBEAE008EE6BA /* SubscriptionManagementUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManagementUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43A2C18CC9C9FDC04B96FFBA /* Pods-SubscriptionManagementTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionManagementTests.release.xcconfig"; path = "Target Support Files/Pods-SubscriptionManagementTests/Pods-SubscriptionManagementTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E7F2F60A02177450F21D9E6 /* Pods-SubscriptionManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionManagement.release.xcconfig"; path = "Target Support Files/Pods-SubscriptionManagement/Pods-SubscriptionManagement.release.xcconfig"; sourceTree = "<group>"; };
+		7A8B99FAA98471195C34DE70 /* Pods_SubscriptionManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubscriptionManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8AA0F05ACFA24E4B69AA272 /* Pods-SubscriptionManagement-SubscriptionManagementUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionManagement-SubscriptionManagementUITests.debug.xcconfig"; path = "Target Support Files/Pods-SubscriptionManagement-SubscriptionManagementUITests/Pods-SubscriptionManagement-SubscriptionManagementUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFE4F54F38388E8370B61E2C /* Pods_SubscriptionManagement_SubscriptionManagementUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubscriptionManagement_SubscriptionManagementUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F64E89C7E3955A5AA41038 /* Pods-SubscriptionManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionManagement.debug.xcconfig"; path = "Target Support Files/Pods-SubscriptionManagement/Pods-SubscriptionManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		DC6B8D2E4C84E36B6BA48FAA /* Pods_SubscriptionManagementTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubscriptionManagementTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E756B990BE252EA06C36C5BD /* Pods_SubscriptionManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4B438074109196B53D185C /* Pods_SubscriptionManagementTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +106,88 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB046BBB0038E885670F58E /* Pods_SubscriptionManagement_SubscriptionManagementUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011558A4799B5F552425CC0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2F64E89C7E3955A5AA41038 /* Pods-SubscriptionManagement.debug.xcconfig */,
+				5E7F2F60A02177450F21D9E6 /* Pods-SubscriptionManagement.release.xcconfig */,
+				A8AA0F05ACFA24E4B69AA272 /* Pods-SubscriptionManagement-SubscriptionManagementUITests.debug.xcconfig */,
+				0945E5001B8DD951765562AA /* Pods-SubscriptionManagement-SubscriptionManagementUITests.release.xcconfig */,
+				2AAE8AD02252135EC6BE79EB /* Pods-SubscriptionManagementTests.debug.xcconfig */,
+				43A2C18CC9C9FDC04B96FFBA /* Pods-SubscriptionManagementTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2A67DA1B27FDD6D200A2D9B5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2AD3FEFF27FDBEAC008EE6BA /* SubscriptionListViewController.swift */,
+				2A67DA1927FDD69300A2D9B5 /* SubscriptionList.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2A67DA1C27FDD6E100A2D9B5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2A67DA2027FDD7A700A2D9B5 /* Router.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2A67DA1D27FDD6F000A2D9B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A67DA1E27FDD71F00A2D9B5 /* UIStoryboard+.swift */,
+				2A67DA2727FDE09200A2D9B5 /* UITableViewCell+.swift */,
+				2A67DA382800868800A2D9B5 /* UITextField+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2A67DA2227FDE02400A2D9B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A67DA2327FDE07000A2D9B5 /* SubscriptionListCell.swift */,
+				2A67DA2427FDE07000A2D9B5 /* SubscriptionListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A67DA2927FDF47500A2D9B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A67DA2A27FDF49300A2D9B5 /* SubscriptionServiceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A67DA2C27FF272300A2D9B5 /* AddSubscription */ = {
+			isa = PBXGroup;
+			children = (
+				2A67DA2D27FF273500A2D9B5 /* ViewController */,
+			);
+			path = AddSubscription;
+			sourceTree = "<group>";
+		};
+		2A67DA2D27FF273500A2D9B5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A67DA2E27FF277E00A2D9B5 /* AddSubscriptionViewController.swift */,
+				2A67DA3027FF278A00A2D9B5 /* AddSubscription.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		2AD3FEEF27FDBEAC008EE6BA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +195,8 @@
 				2AD3FF1127FDBEAE008EE6BA /* SubscriptionManagementTests */,
 				2AD3FF1B27FDBEAE008EE6BA /* SubscriptionManagementUITests */,
 				2AD3FEF927FDBEAC008EE6BA /* Products */,
+				011558A4799B5F552425CC0E /* Pods */,
+				40C7C5C66E4C22BD19E2F45E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +215,12 @@
 			children = (
 				2AD3FEFB27FDBEAC008EE6BA /* AppDelegate.swift */,
 				2AD3FEFD27FDBEAC008EE6BA /* SceneDelegate.swift */,
-				2AD3FEFF27FDBEAC008EE6BA /* ViewController.swift */,
-				2AD3FF0127FDBEAC008EE6BA /* Main.storyboard */,
+				2AD3FF2B27FDD512008EE6BA /* SubscriptionList */,
+				2A67DA2C27FF272300A2D9B5 /* AddSubscription */,
+				2A67DA1C27FDD6E100A2D9B5 /* Utility */,
+				2A67DA1D27FDD6F000A2D9B5 /* Extensions */,
+				2A67DA3227FFE19E00A2D9B5 /* PickerKeyboard.swift */,
+				2A67DA3428004D6200A2D9B5 /* DatePickerKeyboard.swift */,
 				2AD3FF0427FDBEAE008EE6BA /* Assets.xcassets */,
 				2AD3FF0627FDBEAE008EE6BA /* LaunchScreen.storyboard */,
 				2AD3FF0927FDBEAE008EE6BA /* Info.plist */,
@@ -127,6 +245,26 @@
 			path = SubscriptionManagementUITests;
 			sourceTree = "<group>";
 		};
+		2AD3FF2B27FDD512008EE6BA /* SubscriptionList */ = {
+			isa = PBXGroup;
+			children = (
+				2A67DA2927FDF47500A2D9B5 /* Model */,
+				2A67DA1B27FDD6D200A2D9B5 /* ViewController */,
+				2A67DA2227FDE02400A2D9B5 /* View */,
+			);
+			path = SubscriptionList;
+			sourceTree = "<group>";
+		};
+		40C7C5C66E4C22BD19E2F45E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A8B99FAA98471195C34DE70 /* Pods_SubscriptionManagement.framework */,
+				BFE4F54F38388E8370B61E2C /* Pods_SubscriptionManagement_SubscriptionManagementUITests.framework */,
+				DC6B8D2E4C84E36B6BA48FAA /* Pods_SubscriptionManagementTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AD3FF2227FDBEAE008EE6BA /* Build configuration list for PBXNativeTarget "SubscriptionManagement" */;
 			buildPhases = (
+				3E343D3BDE6380EC079F1F72 /* [CP] Check Pods Manifest.lock */,
 				2AD3FEF427FDBEAC008EE6BA /* Sources */,
 				2AD3FEF527FDBEAC008EE6BA /* Frameworks */,
 				2AD3FEF627FDBEAC008EE6BA /* Resources */,
+				7FA33EE1A8491D4FDFEA63DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AD3FF2527FDBEAE008EE6BA /* Build configuration list for PBXNativeTarget "SubscriptionManagementTests" */;
 			buildPhases = (
+				C2B4E24E37389374B20687FF /* [CP] Check Pods Manifest.lock */,
 				2AD3FF0A27FDBEAE008EE6BA /* Sources */,
 				2AD3FF0B27FDBEAE008EE6BA /* Frameworks */,
 				2AD3FF0C27FDBEAE008EE6BA /* Resources */,
@@ -169,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AD3FF2827FDBEAE008EE6BA /* Build configuration list for PBXNativeTarget "SubscriptionManagementUITests" */;
 			buildPhases = (
+				3B014E965317981BB0DBF14B /* [CP] Check Pods Manifest.lock */,
 				2AD3FF1427FDBEAE008EE6BA /* Sources */,
 				2AD3FF1527FDBEAE008EE6BA /* Frameworks */,
 				2AD3FF1627FDBEAE008EE6BA /* Resources */,
+				BDEB8274F24ADF13A52E4ABA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +374,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A67DA3127FF278A00A2D9B5 /* AddSubscription.storyboard in Resources */,
 				2AD3FF0827FDBEAE008EE6BA /* LaunchScreen.storyboard in Resources */,
 				2AD3FF0527FDBEAE008EE6BA /* Assets.xcassets in Resources */,
-				2AD3FF0327FDBEAC008EE6BA /* Main.storyboard in Resources */,
+				2A67DA2627FDE07000A2D9B5 /* SubscriptionListCell.xib in Resources */,
+				2A67DA1A27FDD69300A2D9B5 /* SubscriptionList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,13 +398,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B014E965317981BB0DBF14B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SubscriptionManagement-SubscriptionManagementUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E343D3BDE6380EC079F1F72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SubscriptionManagement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FA33EE1A8491D4FDFEA63DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SubscriptionManagement/Pods-SubscriptionManagement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SubscriptionManagement/Pods-SubscriptionManagement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SubscriptionManagement/Pods-SubscriptionManagement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDEB8274F24ADF13A52E4ABA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SubscriptionManagement-SubscriptionManagementUITests/Pods-SubscriptionManagement-SubscriptionManagementUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SubscriptionManagement-SubscriptionManagementUITests/Pods-SubscriptionManagement-SubscriptionManagementUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SubscriptionManagement-SubscriptionManagementUITests/Pods-SubscriptionManagement-SubscriptionManagementUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2B4E24E37389374B20687FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SubscriptionManagementTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2AD3FEF427FDBEAC008EE6BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AD3FF0027FDBEAC008EE6BA /* ViewController.swift in Sources */,
+				2A67DA2F27FF277E00A2D9B5 /* AddSubscriptionViewController.swift in Sources */,
+				2A67DA392800868800A2D9B5 /* UITextField+.swift in Sources */,
+				2A67DA2B27FDF49300A2D9B5 /* SubscriptionServiceModel.swift in Sources */,
+				2A67DA1F27FDD71F00A2D9B5 /* UIStoryboard+.swift in Sources */,
+				2AD3FF0027FDBEAC008EE6BA /* SubscriptionListViewController.swift in Sources */,
+				2A67DA2527FDE07000A2D9B5 /* SubscriptionListCell.swift in Sources */,
+				2A67DA2127FDD7A700A2D9B5 /* Router.swift in Sources */,
+				2A67DA3327FFE19E00A2D9B5 /* PickerKeyboard.swift in Sources */,
 				2AD3FEFC27FDBEAC008EE6BA /* AppDelegate.swift in Sources */,
+				2A67DA3528004D6200A2D9B5 /* DatePickerKeyboard.swift in Sources */,
+				2A67DA2827FDE09200A2D9B5 /* UITableViewCell+.swift in Sources */,
 				2AD3FEFE27FDBEAC008EE6BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +554,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2AD3FF0127FDBEAC008EE6BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2AD3FF0227FDBEAC008EE6BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2AD3FF0627FDBEAE008EE6BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +683,7 @@
 		};
 		2AD3FF2327FDBEAE008EE6BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2F64E89C7E3955A5AA41038 /* Pods-SubscriptionManagement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,7 +694,6 @@
 				INFOPLIST_FILE = SubscriptionManagement/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -463,6 +712,7 @@
 		};
 		2AD3FF2427FDBEAE008EE6BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E7F2F60A02177450F21D9E6 /* Pods-SubscriptionManagement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,7 +723,6 @@
 				INFOPLIST_FILE = SubscriptionManagement/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -492,6 +741,7 @@
 		};
 		2AD3FF2627FDBEAE008EE6BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AAE8AD02252135EC6BE79EB /* Pods-SubscriptionManagementTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +762,7 @@
 		};
 		2AD3FF2727FDBEAE008EE6BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43A2C18CC9C9FDC04B96FFBA /* Pods-SubscriptionManagementTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +783,7 @@
 		};
 		2AD3FF2927FDBEAE008EE6BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8AA0F05ACFA24E4B69AA272 /* Pods-SubscriptionManagement-SubscriptionManagementUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +802,7 @@
 		};
 		2AD3FF2A27FDBEAE008EE6BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0945E5001B8DD951765562AA /* Pods-SubscriptionManagement-SubscriptionManagementUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
