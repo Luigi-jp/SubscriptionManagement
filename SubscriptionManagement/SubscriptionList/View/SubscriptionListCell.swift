@@ -23,6 +23,13 @@ final class SubscriptionListCell: UITableViewCell {
     func configure(item: SubscriptionServiceModel) {
         nameLabel.text = item.name
         priceLabel.text = "¥\(item.price)/\(item.cycle.unit)"
-        billingDateLabel.text = "更新日：2022/4/10"
+        billingDateLabel.text = "更新日：\(setDate(date: item.nextPaymentDate))"
+    }
+    
+    func setDate(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.locale = Locale(identifier: "ja")
+        return formatter.string(from: date)
     }
 }

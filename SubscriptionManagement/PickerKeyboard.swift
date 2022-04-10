@@ -28,6 +28,10 @@ final class PickerKeyboard: UITextField {
     func setData(data: [String]) {
         self.data = data
     }
+
+    func getSelectedIndex() -> Int {
+        return pickerView.selectedRow(inComponent: 0)
+    }
 }
 
 private extension PickerKeyboard {

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 final class AddSubscriptionViewController: UIViewController {
     static func makeFromStoryboard() -> AddSubscriptionViewController {
@@ -13,6 +14,7 @@ final class AddSubscriptionViewController: UIViewController {
         return vc
     }
 
+    private let realm = try! Realm()
     private let cycles: [Cycle] = [.oneMonth, .twoMonth, .threeMonth, .sixMonth, .oneYear]
 
     @IBOutlet private weak var nameTextField: UITextField!
@@ -30,6 +32,7 @@ final class AddSubscriptionViewController: UIViewController {
         let dismissBarButton = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(tapDismissBarButton(_:)))
         navigationItem.leftBarButtonItem = dismissBarButton
         registrationButton.layer.cornerRadius = 30
+        registrationButton.addTarget(self, action: #selector(tapRegistrationButton(_:)), for: .touchUpInside)
         textFields.forEach { textField in
             textField.setUnderLine()
         }
@@ -39,6 +42,26 @@ final class AddSubscriptionViewController: UIViewController {
 
 @objc private extension AddSubscriptionViewController {
     func tapDismissBarButton(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true)
+    }
+
+    func tapRegistrationButton(_ sender: UIButton) {
+        guard let name = nameTextField.text,
+              let priceText = priceTextField.text,
+              let price = Int(priceText),
+              let paymentCycle = Cycle(rawValue: paymentCycleTextField.getSelectedIndex()) else {
+                  return
+              }
+        let subscription = SubscriptionServiceModel()
+        subscription.name = name
+        subscription.price = price
+        subscription.cycle = paymentCycle
+        subscription.firstPaymentDate = paymentDateTextField.getDate()
+        subscription.tag = tagTextField.text
+        subscription.memo = memoTextField.text
+        try! realm.write {
+            realm.add(subscription)
+        }
         self.dismiss(animated: true)
     }
 }

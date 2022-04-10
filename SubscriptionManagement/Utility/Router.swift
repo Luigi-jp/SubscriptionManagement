@@ -43,6 +43,7 @@ private extension Router {
 
     func showModal(from: UIViewController, to: UIViewController, animated: Bool = true) {
         let nav = UINavigationController(rootViewController: to)
+        nav.modalPresentationStyle = .fullScreen
         from.present(nav, animated: animated)
     }
 }

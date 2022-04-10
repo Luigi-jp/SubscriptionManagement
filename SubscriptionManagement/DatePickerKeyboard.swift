@@ -22,6 +22,10 @@ final class DatePickerKeyboard: UITextField {
     override func caretRect(for position: UITextPosition) -> CGRect {
         return CGRect(x: 0, y: 0, width: 0, height: 0)
     }
+
+    func getDate() -> Date {
+        return datePickerView.date
+    }
 }
 
 private extension DatePickerKeyboard {
@@ -69,6 +73,7 @@ private extension DatePickerKeyboard {
         formatter.dateStyle = .long
         formatter.locale = Locale(identifier: "ja")
         text = formatter.string(from: datePickerView.date)
+        print(datePickerView.date)
     }
 }
 
