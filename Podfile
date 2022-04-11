@@ -7,6 +7,10 @@ target 'SubscriptionManagement' do
 
   # Pods for SubscriptionManagement
   pod 'RealmSwift'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxOptional'
+  pod 'NSObject+Rx'
 
   target 'SubscriptionManagementTests' do
     inherit! :search_paths

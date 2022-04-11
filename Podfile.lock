@@ -1,22 +1,47 @@
 PODS:
+  - "NSObject+Rx (5.2.2)":
+    - RxSwift (~> 6.2)
   - Realm (10.22.0):
     - Realm/Headers (= 10.22.0)
   - Realm/Headers (10.22.0)
   - RealmSwift (10.22.0):
     - Realm (= 10.22.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxOptional (5.0.2):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
 
 DEPENDENCIES:
+  - "NSObject+Rx"
   - RealmSwift
+  - RxCocoa
+  - RxOptional
+  - RxSwift
 
 SPEC REPOS:
   trunk:
+    - "NSObject+Rx"
     - Realm
     - RealmSwift
+    - RxCocoa
+    - RxOptional
+    - RxRelay
+    - RxSwift
 
 SPEC CHECKSUMS:
+  "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
   Realm: d9e4e5877095a6722145811f56fe89a531c9659d
   RealmSwift: e4191b4b957fcfcbed23751ec65eec98f8173ab5
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxOptional: 3664964c96b69dd20c9cf78bdfe546615e26eca8
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
 
-PODFILE CHECKSUM: bc4a12e63884ea93ae337090afbf97414bf61b00
+PODFILE CHECKSUM: 301f1a535e9973fd3e650ac3a0c010419d3dec9d
 
 COCOAPODS: 1.11.2
