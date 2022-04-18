@@ -11,6 +11,8 @@ import RealmSwift
 final class AddSubscriptionViewController: UIViewController {
     static func makeFromStoryboard() -> AddSubscriptionViewController {
         let vc = UIStoryboard.addSubscription
+        let presenter = AddSubscriptionPresenter(view: vc)
+        vc.inject(presenter: presenter)
         return vc
     }
 
@@ -25,6 +27,11 @@ final class AddSubscriptionViewController: UIViewController {
     @IBOutlet private weak var memoTextField: UITextField!
     @IBOutlet private weak var registrationButton: UIButton!
     @IBOutlet private var textFields: [UITextField]!
+
+    private var presenter: AddSubscriptionInput!
+    private func inject(presenter: AddSubscriptionInput) {
+        self.presenter = presenter
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,4 +71,8 @@ final class AddSubscriptionViewController: UIViewController {
         }
         self.dismiss(animated: true)
     }
+}
+
+extension AddSubscriptionViewController: AddSubscriptionOutput {
+    
 }

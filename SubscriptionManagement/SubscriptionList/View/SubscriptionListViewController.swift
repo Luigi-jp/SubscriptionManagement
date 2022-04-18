@@ -11,6 +11,8 @@ import RealmSwift
 final class SubscriptionListViewController: UIViewController {
     static func makeFromStoryboard() -> SubscriptionListViewController {
         let vc = UIStoryboard.subscriptionList
+        let presenter = SubscriptionListPresenter(view: vc)
+        vc.inject(presenter: presenter)
         return vc
     }
 
@@ -22,6 +24,11 @@ final class SubscriptionListViewController: UIViewController {
         didSet {
             addButton.addTarget(self, action: #selector(tapAddButton(_:)), for: .touchUpInside)
         }
+    }
+
+    private var presenter: SubscriptionListInput!
+    private func inject(presenter: SubscriptionListInput) {
+        self.presenter = presenter
     }
     
     override func viewDidLoad() {
@@ -56,4 +63,8 @@ extension SubscriptionListViewController: UITableViewDataSource {
         cell.configure(item: item)
         return cell
     }
+}
+
+extension SubscriptionListViewController: SubscriptionListOutput {
+    
 }
