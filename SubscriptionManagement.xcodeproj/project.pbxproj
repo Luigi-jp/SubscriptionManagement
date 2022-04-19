@@ -178,6 +178,8 @@
 			children = (
 				2A67DA2327FDE07000A2D9B5 /* SubscriptionListCell.swift */,
 				2A67DA2427FDE07000A2D9B5 /* SubscriptionListCell.xib */,
+				2A67DA3227FFE19E00A2D9B5 /* PickerKeyboard.swift */,
+				2A67DA3428004D6200A2D9B5 /* DatePickerKeyboard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,8 +242,6 @@
 				2A67DA2227FDE02400A2D9B5 /* View */,
 				2AD3FF2B27FDD512008EE6BA /* SubscriptionList */,
 				2A67DA2C27FF272300A2D9B5 /* AddSubscription */,
-				2A67DA3227FFE19E00A2D9B5 /* PickerKeyboard.swift */,
-				2A67DA3428004D6200A2D9B5 /* DatePickerKeyboard.swift */,
 				2AD3FF0427FDBEAE008EE6BA /* Assets.xcassets */,
 				2AD3FF0627FDBEAE008EE6BA /* LaunchScreen.storyboard */,
 				2AD3FF0927FDBEAE008EE6BA /* Info.plist */,
