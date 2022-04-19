@@ -6,16 +6,14 @@
 //
 
 import UIKit
-import RealmSwift
 
 final class SubscriptionListViewController: UIViewController {
     static func makeFromStoryboard() -> SubscriptionListViewController {
         let vc = UIStoryboard.subscriptionList
+        let presenter = SubscriptionListPresenter(view: vc)
+        vc.inject(presenter: presenter)
         return vc
     }
-
-    private let realm = try! Realm()
-    private var subscriptions: [SubscriptionServiceModel] = []
 
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var addButton: UIButton! {
@@ -23,7 +21,12 @@ final class SubscriptionListViewController: UIViewController {
             addButton.addTarget(self, action: #selector(tapAddButton(_:)), for: .touchUpInside)
         }
     }
-    
+
+    private var presenter: SubscriptionListInput!
+    private func inject(presenter: SubscriptionListInput) {
+        self.presenter = presenter
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "サブスク一覧"
@@ -45,15 +48,23 @@ final class SubscriptionListViewController: UIViewController {
 
 extension SubscriptionListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return realm.objects(SubscriptionServiceModel.self).count
+        return presenter.numberOfItems
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SubscriptionListCell.identifier, for: indexPath) as? SubscriptionListCell else {
             fatalError("セルの再利用に失敗しました。")
         }
-        let item = realm.objects(SubscriptionServiceModel.self)[indexPath.row]
+        let item = presenter.item(forRow: indexPath.row)
         cell.configure(item: item)
         return cell
+    }
+}
+
+extension SubscriptionListViewController: SubscriptionListOutput {
+    func update(subscriptions: [SubscriptionServiceModel]) {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }

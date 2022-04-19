@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A09FCAA280DA5F5009E4F53 /* SubscriptionListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09FCA9280DA5F5009E4F53 /* SubscriptionListPresenter.swift */; };
+		2A09FCAD280DB1E8009E4F53 /* AddSubscriptionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09FCAC280DB1E8009E4F53 /* AddSubscriptionPresenter.swift */; };
 		2A67DA1A27FDD69300A2D9B5 /* SubscriptionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A67DA1927FDD69300A2D9B5 /* SubscriptionList.storyboard */; };
 		2A67DA1F27FDD71F00A2D9B5 /* UIStoryboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA1E27FDD71F00A2D9B5 /* UIStoryboard+.swift */; };
 		2A67DA2127FDD7A700A2D9B5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A67DA2027FDD7A700A2D9B5 /* Router.swift */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		0945E5001B8DD951765562AA /* Pods-SubscriptionManagement-SubscriptionManagementUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubscriptionManagement-SubscriptionManagementUITests.release.xcconfig"; path = "Target Support Files/Pods-SubscriptionManagement-SubscriptionManagementUITests/Pods-SubscriptionManagement-SubscriptionManagementUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A09FCA9280DA5F5009E4F53 /* SubscriptionListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionListPresenter.swift; sourceTree = "<group>"; };
+		2A09FCAC280DB1E8009E4F53 /* AddSubscriptionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionPresenter.swift; sourceTree = "<group>"; };
 		2A67DA1927FDD69300A2D9B5 /* SubscriptionList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubscriptionList.storyboard; sourceTree = "<group>"; };
 		2A67DA1E27FDD71F00A2D9B5 /* UIStoryboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+.swift"; sourceTree = "<group>"; };
 		2A67DA2027FDD7A700A2D9B5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -123,17 +127,32 @@
 				2AAE8AD02252135EC6BE79EB /* Pods-SubscriptionManagementTests.debug.xcconfig */,
 				43A2C18CC9C9FDC04B96FFBA /* Pods-SubscriptionManagementTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		2A67DA1B27FDD6D200A2D9B5 /* ViewController */ = {
+		2A09FCA8280DA5D2009E4F53 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2A09FCA9280DA5F5009E4F53 /* SubscriptionListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2A09FCAB280DB19E009E4F53 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2A09FCAC280DB1E8009E4F53 /* AddSubscriptionPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2A67DA1B27FDD6D200A2D9B5 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				2AD3FEFF27FDBEAC008EE6BA /* SubscriptionListViewController.swift */,
 				2A67DA1927FDD69300A2D9B5 /* SubscriptionList.storyboard */,
 			);
-			path = ViewController;
+			path = View;
 			sourceTree = "<group>";
 		};
 		2A67DA1C27FDD6E100A2D9B5 /* Utility */ = {
@@ -159,6 +178,8 @@
 			children = (
 				2A67DA2327FDE07000A2D9B5 /* SubscriptionListCell.swift */,
 				2A67DA2427FDE07000A2D9B5 /* SubscriptionListCell.xib */,
+				2A67DA3227FFE19E00A2D9B5 /* PickerKeyboard.swift */,
+				2A67DA3428004D6200A2D9B5 /* DatePickerKeyboard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,18 +195,19 @@
 		2A67DA2C27FF272300A2D9B5 /* AddSubscription */ = {
 			isa = PBXGroup;
 			children = (
-				2A67DA2D27FF273500A2D9B5 /* ViewController */,
+				2A09FCAB280DB19E009E4F53 /* Presenter */,
+				2A67DA2D27FF273500A2D9B5 /* View */,
 			);
 			path = AddSubscription;
 			sourceTree = "<group>";
 		};
-		2A67DA2D27FF273500A2D9B5 /* ViewController */ = {
+		2A67DA2D27FF273500A2D9B5 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				2A67DA2E27FF277E00A2D9B5 /* AddSubscriptionViewController.swift */,
 				2A67DA3027FF278A00A2D9B5 /* AddSubscription.storyboard */,
 			);
-			path = ViewController;
+			path = View;
 			sourceTree = "<group>";
 		};
 		2AD3FEEF27FDBEAC008EE6BA = {
@@ -215,12 +237,11 @@
 			children = (
 				2AD3FEFB27FDBEAC008EE6BA /* AppDelegate.swift */,
 				2AD3FEFD27FDBEAC008EE6BA /* SceneDelegate.swift */,
-				2AD3FF2B27FDD512008EE6BA /* SubscriptionList */,
-				2A67DA2C27FF272300A2D9B5 /* AddSubscription */,
 				2A67DA1C27FDD6E100A2D9B5 /* Utility */,
 				2A67DA1D27FDD6F000A2D9B5 /* Extensions */,
-				2A67DA3227FFE19E00A2D9B5 /* PickerKeyboard.swift */,
-				2A67DA3428004D6200A2D9B5 /* DatePickerKeyboard.swift */,
+				2A67DA2227FDE02400A2D9B5 /* View */,
+				2AD3FF2B27FDD512008EE6BA /* SubscriptionList */,
+				2A67DA2C27FF272300A2D9B5 /* AddSubscription */,
 				2AD3FF0427FDBEAE008EE6BA /* Assets.xcassets */,
 				2AD3FF0627FDBEAE008EE6BA /* LaunchScreen.storyboard */,
 				2AD3FF0927FDBEAE008EE6BA /* Info.plist */,
@@ -249,8 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				2A67DA2927FDF47500A2D9B5 /* Model */,
-				2A67DA1B27FDD6D200A2D9B5 /* ViewController */,
-				2A67DA2227FDE02400A2D9B5 /* View */,
+				2A67DA1B27FDD6D200A2D9B5 /* View */,
+				2A09FCA8280DA5D2009E4F53 /* Presenter */,
 			);
 			path = SubscriptionList;
 			sourceTree = "<group>";
@@ -513,7 +534,9 @@
 				2AD3FF0027FDBEAC008EE6BA /* SubscriptionListViewController.swift in Sources */,
 				2A67DA2527FDE07000A2D9B5 /* SubscriptionListCell.swift in Sources */,
 				2A67DA2127FDD7A700A2D9B5 /* Router.swift in Sources */,
+				2A09FCAD280DB1E8009E4F53 /* AddSubscriptionPresenter.swift in Sources */,
 				2A67DA3327FFE19E00A2D9B5 /* PickerKeyboard.swift in Sources */,
+				2A09FCAA280DA5F5009E4F53 /* SubscriptionListPresenter.swift in Sources */,
 				2AD3FEFC27FDBEAC008EE6BA /* AppDelegate.swift in Sources */,
 				2A67DA3528004D6200A2D9B5 /* DatePickerKeyboard.swift in Sources */,
 				2A67DA2827FDE09200A2D9B5 /* UITableViewCell+.swift in Sources */,
